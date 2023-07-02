@@ -1,0 +1,86 @@
+.page {
+  position: relative;
+  margin: 0;
+  padding: 88px 24px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #848ead;
+  background-color: #ffffff;
+}
+
+.page::before,
+.page::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  display: block;
+}
+
+.page::before {
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #f1f5fe;
+  border-bottom-left-radius: 192px;
+}
+
+.page::after {
+  inset-block-start: 57px;
+  inset-inline-start: calc(50% - 73px);
+  width: 146px;
+  height: 146px;
+  background-image: url('/images/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page__title {
+  margin-block-start: 0;
+  margin-block-end: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #293356;
+}
+
+.page__lead {
+  margin-block-start: 0;
+  margin-block-end: 64px;
+  text-align: center;
+}
+
+@media (min-width: 758px) {
+
+  .page {
+    padding-block-start: 105px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .page::before {
+    height: 450px;
+  }
+
+  .page::after {
+    inset-block-start: 67px;
+    inset-inline-start: calc(50% - 73px);
+  }
+
+  .page__title {
+    margin-block-end: 12px;
+    font-size: 28px;
+  }
+
+  .page__lead {
+    margin-block-end: 92px;
+  }
+
+  .page__lead br {
+    display: none;
+  }
+}

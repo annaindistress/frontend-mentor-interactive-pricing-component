@@ -9,6 +9,6 @@ export default defineConfig({
       ],
     },
   },
-  base: '/github-project-name/',
+  base: '/frontend-mentor-interactive-pricing-component/',
   root: 'src',
 });

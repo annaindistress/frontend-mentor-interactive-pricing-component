@@ -18,9 +18,22 @@ Users should be able to:
 
 ## Screenshot
 
+![](./screenshot.png)
+
 ## Links
 
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-interactive-pricing-component)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-interactive-pricing-component/)
+
 ## Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- PostCSS
+- Mobile-first workflow
+- Vanilla JavaScript
+- Vite
 
 ## Author
 
