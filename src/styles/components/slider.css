@@ -315,12 +315,9 @@
     padding-inline: 48px;
   }
 
-  .slider__label {
+  .slider__input {
     grid-column: 1 / span 2;
     grid-row: 2 / 3;
-  }
-
-  .slider__input {
     margin-block-end: 16px;
   }
 
