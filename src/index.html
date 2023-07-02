@@ -9,50 +9,54 @@
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body class="page">
-  <h1 class="page__title">Simple, traffic-based pricing</h1>
-  <p class="page__lead">
-    Sign-up for our 30-day trial.
-    <br>
-    No credit card required.
-  </p>
-  <form class="slider" action="#" method="get">
-    <fieldset class="slider__field">
-      <input class="slider__input" type="range" name="slider-range" id="slider-range" min="0" max="200" value="100" step="10">
-      <output class="slider__output slider__output--pageviews" for="slider-range">
-        <span class="slider__output-pageviews">100</span>
-        K pageviews
-      </output>
-      <output class="slider__output slider__output--price" for="slider-range slider-switch">
-        <span class="slider__price">
-          $
-          <span class="slider__output-price">16.00</span>
-        </span>
-        / month
-      </output>
-      <p class="slider__switch" tabindex="0">
-        <label for="slider-switch" class="slider__label">
-          Monthly billing
-          <span class="sr-only">if not checked</span>
+  <main>
+    <h1 class="page__title">Simple, traffic-based pricing</h1>
+    <p class="page__lead">
+      Sign-up for our 30-day trial.
+      <br>
+      No credit card required.
+    </p>
+    <form class="slider" action="#" method="get">
+      <fieldset class="slider__field">
+        <label class="slider__label" title="Сhoose the desired traffic package">
+          <input class="slider__input" type="range" name="slider-range" id="slider-range" min="0" max="200" value="100" step="10">
         </label>
-        <input class="slider__switch-input" type="checkbox" name="slider-switch" id="slider-switch">
-        <label for="slider-switch" class="slider__label slider__label--control"></label>
-        <label for="slider-switch" class="slider__label">
-          Yearly billing
-          <span class="sr-only">if checked</span>
-          <span class="slider__discount">
-            <span class="slider__discount-mobile">-</span>
-            25%
-            <span class="slider__discount-desktop">discount</span>
+        <output class="slider__output slider__output--pageviews" for="slider-range">
+          <span class="slider__output-pageviews">100</span>
+          K pageviews
+        </output>
+        <output class="slider__output slider__output--price" for="slider-range slider-switch">
+          <span class="slider__price">
+            $
+            <span class="slider__output-price">16.00</span>
           </span>
-        </label>
-      </p>
-    </fieldset>
-    <ul class="slider__list">
-      <li class="slider__item">Unlimited websites</li>
-      <li class="slider__item">100% data ownership</li>
-      <li class="slider__item">Email reports</li>
-    </ul>
-    <button class="slider__button" type="submit">Start my trial</button>
-  </form>
+          / month
+        </output>
+        <p class="slider__switch" tabindex="0">
+          <label for="slider-switch" class="slider__label">
+            Monthly billing
+            <span class="sr-only">if not checked</span>
+          </label>
+          <input class="slider__switch-input" type="checkbox" name="slider-switch" id="slider-switch">
+          <label for="slider-switch" class="slider__label slider__label--control"></label>
+          <label for="slider-switch" class="slider__label">
+            Yearly billing
+            <span class="sr-only">if checked</span>
+            <span class="slider__discount">
+              <span class="slider__discount-mobile">-</span>
+              25%
+              <span class="slider__discount-desktop">discount</span>
+            </span>
+          </label>
+        </p>
+      </fieldset>
+      <ul class="slider__list">
+        <li class="slider__item">Unlimited websites</li>
+        <li class="slider__item">100% data ownership</li>
+        <li class="slider__item">Email reports</li>
+      </ul>
+      <button class="slider__button" type="submit">Start my trial</button>
+    </form>
+  </main>
 </body>
 </html>
